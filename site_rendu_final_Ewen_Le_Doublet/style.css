@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #120305;
+    color: #fff;
+    background-image: radial-gradient(circle at 50% 10%, #3a030b 0%, #120305 90%);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d0203;
+    border-bottom: 2px solid #f1c40f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    z-index: 100;
+}
+
+.logo {
+    color: #f1c40f;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+/* pour le contenu */
+.container {
+    max-width: 900px;
+    margin: 90px auto 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header-section {
+    text-align: center;
+}
+
+.main-title {
+    color: #f1c40f;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.img-banner {
+    border: 2px solid #f1c40f;
+    background: #000;
+}
+
+.img-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* pour les boites semblables au design de mon site de référence */
+.box {
+    background: #180608;
+    border: 2px solid #f1c40f;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.box h2, .box h3 {
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.box p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/* Carrousels */
+.carousel-block h2 {
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.carousel-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ce qu'on met dans le caroussel */
+.projet-item, .projet-cours {
+    display: none; /* masqué par défaut */
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.projet-item.actif, .projet-cours.actif {
+    display: grid;
+}
+
+.inner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mini-img {
+    border: 2px solid #f1c40f;
+    background: #000;
+}
+
+.mini-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* pour les boutons gauche droite */
+.arrow-btn {
+    background: #180608;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    font-size: 1.5rem;
+    width: 45px;
+    height: 120px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.arrow-btn:hover {
+    background: #f1c40f;
+    color: #000;
+}
+
+/* le formulaire */
+#monFormulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.ligne-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ligne-form label {
+    font-size: 0.9rem;
+    color: #f1c40f;
+}
+
+.ligne-form input, .ligne-form textarea {
+    background: #0d0203;
+    border: 1px solid #f1c40f;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.msg-erreur {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.btn-valider {
+    background: transparent;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: max-content;
+}
+
+.btn-valider:hover {
+    background: #f1c40f;
+    color: #000;
+}

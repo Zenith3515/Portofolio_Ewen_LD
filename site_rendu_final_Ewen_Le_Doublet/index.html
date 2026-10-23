@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    
+    <!-- police que j'ai choisi -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- lien vers le css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- lien vers le jvs -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- la navbar -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#top">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#finis">Projets finis</a></li>
+            <li><a href="#cours">En cours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="top">
+
+        <!-- bannière de la page avec le titre -->
+        <header class="header-section">
+            <h1 class="main-title">Mon Portfolio</h1>
+            <div class="img-banner">
+                <img src="images/Banner.jpg" alt="bannière">
+            </div>
+        </header>
+
+        <!-- Présentation de moi même -->
+        <section id="apropos" class="box">
+            <h2>Qui je suis</h2>
+            <p>Je m'appelle Ewen le Doublet, ayant eu le bac avec mention et les spécialitées NSI Maths en terminale ainsi que SI en première,
+                 actuellement étudiant à l'IIM en première année je suis passioné par le dévellopement et le jeu vidéo
+               je souhaite pour l'instant aller en deuxième année en Game Design, mon projet professionel est de devenir Game Designer et de créer
+               mes propres jeux vidéos, devenir dévelopeur indépendant est une option que j'envisage mais je reste ouvert au travail dans des entreprises
+               du domaines. N'hésitez pas à me contacter si mon profil vous intéresse ou pour plus d'informations :)
+            </p>
+        </section>
+
+        <!-- les projets finis -->
+        <section id="finis" class="carousel-block">
+            <h2>Mes projets finis</h2>
+            
+            <div class="carousel-box">
+                <button id="btnPrevFin" class="arrow-btn"> < </button>
+
+                <!-- Projet 1 -->
+                <div class="projet-item actif" data-type="fini">
+                    <div class="box inner-text">
+                        <h3>Jeu vidéo en python durant ma terminale au lycée</h3>
+                        <p>En terminale au lycée les Rimains j'ai du faire un jeu vidéo en python comme projet pour la fin du moi
+                            c'était un projet en binome et j'ai géré l'intégralité de l'aspect gameplay et des idées du jeu, j'ai aussi fait tout le code
+                            utilisé pour le jeu tandis que mon binome a géré tout les menus et leurs Design
+                        </p>
+                    </div>
+                    <div class="img-stack">
+                        <div class="mini-img"><img src="images/Knight_runner_tuto.png" alt="Knight_runner_tuto"></div>
+                        <div class="mini-img"><img src="images/Knight_runner_gameplay.png" alt="Knight_runner_gameplay"></div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="projet-item" data-type="fini">
+                    <div class="box inner-text">
+                        <h3> Création d'un jeu roblox</h3>
+                        <p>Durant ma terminale j'ai crée un jeu roblox, un obby plus précisement, il reste simple
+                           afin de rester un obby classique, cependant j'ai modifié et fait des codes afin de compléxifier
+                           certains aspects du hobby tout en lui ajoutant un thème graphique afin de lui donner une cohérence
+                        </p>
+                    </div>
+                    <div class="img-stack">
+                        <div class="mini-img"><img src="images/roblox_obby_img1.jpg" alt="roblox_obby_img1"></div>
+                        <div class="mini-img"><img src="images/roblox_obby_img2.jpg" alt="roblox_obby_img2"></div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="projet-item" data-type="fini">
+                    <div class="box inner-text">
+                        <h3> Jeu de rôle sur le thème de One Piece</h3>
+                        <p>J'ai crée un jeu de rôle sur le thème de One Piece, j'y ai joué avec des amis en tant que maitre de jeu, nous l'avons finis au bout de 10 sessions,
+                           ce qui nous a pris toute l'année de terminale dans ce jeu de rôle ils incarnaient tous des personnages différents avec une histoire et un but unique,
+                           durant l'aventure ils ont découverts des secrets que le monde leurs cachait et ils ont finis par venger l'espèce d'un des joueurs
+                           qui avait été décimée par un dieu maléfique</p>
+                    </div>
+                    <div class="img-stack">
+                        <div class="mini-img"><img src="images/JDR.jpg" alt="JDR"></div>
+                        <div class="mini-img"><img src="images/JDR_dés.jpg" alt="JDR_dés"></div>
+                    </div>
+                </div>
+
+                <button id="btnNextFin" class="arrow-btn"> > </button>
+            </div>
+        </section>
+
+        <!-- les projets en cours -->
+        <section id="cours" class="carousel-block">
+            <h2>Mes projets en cours</h2>
+            
+            <div class="carousel-box">
+                <button id="btnPrevCours" class="arrow-btn"> < </button>
+
+                <!-- Projet en cours 1 -->
+                <div class="projet-cours actif" data-type="cours">
+                    <div class="box inner-text">
+                        <h3> Nouveau jeu de rôle</h3>
+                        <p>Je suis actuellement entrain de créer un nouveau jeu de rôle cette fois sur le thème de la magie,
+                           j'y jouerai en tant que mettre de jeu avec les mêmes amis sauf 1 qui et parti et un autre qui est venu
+                           ils vivront commes des étudiant d'une académie de magie sauf que ce qu'ils ne savent pas c'est qu'un d'entre eux
+                           est en réalité un démon sorti partiellement de son sceau et qui cherche à s'en libérer totalement
+                        </p>
+                    </div>
+                    <div class="img-stack">
+                        <div class="mini-img"><img src="images/JDR_magie.jpg" alt="JDR_magie"></div>
+                       
+                    </div>
+                </div>
+
+                <!-- Projet en cours 2 -->
+                <div class="projet-cours" data-type="cours">
+                    <div class="box inner-text">
+                        <h3>Intemporal</h3>
+                        <p>je suis actuellement entrain de faire un jeu de société nommé Intemporal, nous sommes trois à le faire
+                           avec Louis Gaston-Baya et Maxime Pezzotta, le jeu consiste en un jeu d'ambiance ou les joueurs incarnent
+                           un juge des jurés un accusé et un plaignant, le juge doit trancher sur l'affaire et les deux joueurs doivent
+                           en plus de convaincre le juge réussir à faire des défis sans se faire repérer par les jurés qui eux doivent
+                           trouver les défis de l'accusé et du plaignant, l'affaire et l'identité du plaignant et de l'accusé étant aléatoire
+                           les parties deviennent totalement loufoque et à mourrir de rire
+                        </p>
+                    </div>
+                    <div class="img-stack">
+                        <div class="mini-img"><img src="images/Intemporal_regles.jpg" alt="Intemporal_regles"></div>
+                        <div class="mini-img"><img src="images/Intemporal_carte.jpg" alt="Intemporal_carte"></div>
+                    </div>
+                </div>
+
+                <button id="btnNextCours" class="arrow-btn"> > </button>
+            </div>
+        </section>
+
+        <!-- le formulaire -->
+        <section id="contact" class="box">
+            <h2>Comment me contacter</h2>
+            <form id="monFormulaire">
+                <div class="ligne-form">
+                    <label for="pseudo">Nom :</label>
+                    <input type="text" id="pseudo" placeholder="Votre nom...">
+                    <span class="msg-erreur" id="errNom">Oublie pas de mettre ton nom !</span>
+                </div>
+
+                <div class="ligne-form">
+                    <label for="mail">Email :</label>
+                    <input type="email" id="mail" placeholder="votre@email.com">
+                    <span class="msg-erreur" id="errMail">Email invalide ou vide.</span>
+                </div>
+
+                <div class="ligne-form">
+                    <label for="texteMsg">Message :</label>
+                    <textarea id="texteMsg" rows="4" placeholder="Écris ton message ici..."></textarea>
+                    <span class="msg-erreur" id="errTexte">Le message est vide...</span>
+                </div>
+
+                <button type="submit" class="btn-valider">Envoyer</button>
+                <div id="succesMsg" style="display:none; color: #2ecc71; margin-top: 10px; font-weight: bold;">
+                    Message bien simulé et envoyé !
+                </div>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
